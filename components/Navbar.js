@@ -11,18 +11,23 @@ const Navbar=({ navigation })=> {
           </TouchableOpacity>
         </View>
         <View style={styles.iconContainer}>
+          <TouchableOpacity onPress={() => navigation.navigate('Blogs')}>
+            <Image source={require('../Assets/blogs.png')} style={styles.icon} />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.iconContainer}>
           <TouchableOpacity onPress={() => navigation.navigate('Camera')}>
             <Image source={require('../Assets/camera.png')} style={styles.icon} />
           </TouchableOpacity>
         </View>
         <View style={styles.iconContainer}>
           <TouchableOpacity onPress={() => navigation.navigate('Blogs')}>
-            <Image source={require('../Assets/blogs.png')} style={styles.icon} />
+            <Image source={require('../Assets/profile.png')} style={styles.icon} />
           </TouchableOpacity>
         </View>
         <View style={styles.iconContainer}>
           <TouchableOpacity>
-            <Image source={require('../Assets/profile.png')} style={styles.icon} />
+            <Image source={require('../Assets/settings.png')} style={styles.icon} />
           </TouchableOpacity>
         </View>
       </View>

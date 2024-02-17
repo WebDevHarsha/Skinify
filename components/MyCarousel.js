@@ -1,21 +1,24 @@
 import React from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, Image, StyleSheet, Dimensions, Text } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const { width: screenWidth } = Dimensions.get('window');
 
 const MyCarousel = () => {
   const data = [
-    { title: 'Slide 1' },
-    { title: 'Slide 2' },
-    { title: 'Slide 3' },
-    // Add more slides as needed
+    { image: require('../Assets/carousel1.jpg'),
+  text:'hello' },
+    { image: require('../Assets/carousel1.jpg'),
+  text:'hello' },
+    { image: require('../Assets/carousel1.jpg'),
+  text:'hello' },
   ];
 
   const renderItem = ({ item }) => {
     return (
       <View style={styles.slide}>
-        <Text style={styles.title}>{item.title}</Text>
+        <Image source={item.image} style={styles.image} />
+        <Text>{item.text}</Text>
       </View>
     );
   };
@@ -39,14 +42,14 @@ const styles = StyleSheet.create({
   slide: {
     width: screenWidth - 60,
     height: 450,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ccc',
+    backgroundColor: 'white',
     borderRadius: 10,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+  image: {
+    width: '100%',
+    height: '70%',
+    borderRadius: 10,
   },
 });
 

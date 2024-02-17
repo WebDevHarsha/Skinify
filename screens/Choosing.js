@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   
   skipButtonText: {
-    color: 'lightgray',
+    color: 'gray',
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
