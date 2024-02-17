@@ -3,7 +3,7 @@ import { StyleSheet, ScrollView, View } from 'react-native';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 
-function Blogs() {
+function Blogs({navigation}) {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
@@ -23,7 +23,9 @@ function Blogs() {
           imageSource={require('../Assets/blogs.png')}
         />
       </ScrollView>
-      <Navbar />
+    
+    <Navbar navigation={navigation} />
+
     </View>
   );
 }
