@@ -59,10 +59,10 @@ const Choosing = ({navigation}) => {
       </View>
 
       <View style={styles.twoButtons}>
-      <TouchableOpacity onPress={() => navigation.navigate('Blogs')} style={styles.continueButton}>
+      <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.continueButton}>
         <Text style={styles.continueButtonText}>Continue</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Initial')} style={styles.skipButton}>
+      <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.skipButton}>
         <Text style={styles.skipButtonText}>Skip for now</Text>
       </TouchableOpacity>
       </View>

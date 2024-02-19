@@ -8,7 +8,7 @@ const Initial=({navigation})=> {
   return (
     <View style={styles.container}>
     <MyCarousel></MyCarousel>
-    <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.next}>
+    <TouchableOpacity onPress={() => navigation.navigate('Choosing')} style={styles.next}>
       <Text>Next</Text>
     </TouchableOpacity>
     </View>
