@@ -7,18 +7,22 @@ const { width: screenWidth } = Dimensions.get('window');
 const MyCarousel = () => {
   const data = [
     { image: require('../Assets/carousel1.jpg'),
-  text:'hello' },
+    heading:'Your personalised skin care AI',
+  text:'Get expert guidance with AI skin analysis & customized routines.' },
     { image: require('../Assets/carousel1.jpg'),
-  text:'hello' },
+    heading:'Struggling with breakouts or dryness?',
+  text:'Get personalized solutions to achieve your skin goals.' },
     { image: require('../Assets/carousel1.jpg'),
-  text:'hello' },
+    heading:'Join #Skinify:',
+  text:'See amazing skincare transformations from our community.' },
   ];
 
   const renderItem = ({ item }) => {
     return (
       <View style={styles.slide}>
         <Image source={item.image} style={styles.image} />
-        <Text>{item.text}</Text>
+        <Text style={styles.heading}>{item.heading}</Text>
+        <Text style={styles.para}>{item.text}</Text>
       </View>
     );
   };
@@ -51,6 +55,15 @@ const styles = StyleSheet.create({
     height: '70%',
     borderRadius: 10,
   },
+  heading:{
+    fontWeight:'bold',
+    margin:10,
+    fontSize:20
+  },
+  para:{
+    paddingHorizontal:20,
+
+  }
 });
 
 export default MyCarousel;
