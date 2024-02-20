@@ -8,19 +8,19 @@ function Blogs({navigation}) {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <Card
-          title="Card Title"
-          description="This is a sample card description."
-          imageSource={require('../Assets/blogs.png')}
+          title="Unveiling a Personalized Path to Glowing Complexion"
+          description="Dive into the world of AI-powered skin analysis, explore how it personalizes your skincare routine, and..."
+          imageSource={require('../Assets/blog1.webp')}
         />
         <Card
-          title="Card Title"
-          description="This is a sample card description."
-          imageSource={require('../Assets/blogs.png')}
+          title="How AI Skincare Apps Go Deeper Than Skin Deep"
+          description="Unravel the science behind AI skin analysis, uncover hidden concerns beneath the surface, and..."
+          imageSource={require('../Assets/blog2.jpg')}
         />
         <Card
-          title="Card Title"
-          description="This is a sample card description."
-          imageSource={require('../Assets/blogs.png')}
+          title="My Journey with AI-Driven Skincare"
+          description="TMy skin was a mystery, but this AI app cracked the code! Glow-up achieved ✨"
+          imageSource={require('../Assets/blog3.png')}
         />
       </ScrollView>
     
