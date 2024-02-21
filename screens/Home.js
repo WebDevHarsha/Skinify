@@ -1,11 +1,15 @@
 import React from "react";
-import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView } from "react-native";
 import Navbar from "../components/Navbar";
 import SearchBar from "react-native-dynamic-search-bar";
+import NonAutomaticCarousel from "../components/NonAutomaticCarousel";
+
 
 function Home({ navigation }) {
   return (
     <View style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+
       <View style={styles.profileContainer}>
         <Image
           source={require("../Assets/profile.png")}
@@ -27,12 +31,43 @@ function Home({ navigation }) {
         <View style={styles.box2}>
           <Text style={styles.doctor}>Dr.David Smith</Text>
           <Text>Dermatalogist</Text>
-          <Text>10:30 am</Text>
+          <Text style={styles.time}>10:30 am</Text>
         </View>
-        {/* <View>
-          <Image source={'../Assets/blog1.webp'}></Image>
-        </View> */}
+        
       </View>
+
+      <View style={styles.subnav}>
+        <Text style={styles.subhead}>
+          Last cases
+        </Text>
+        <Text style={styles.see}>
+          see all
+        </Text>
+      </View>
+
+        <NonAutomaticCarousel />
+
+      <View style={styles.subnav}>
+        <Text style={styles.subhead}>
+          My doctors
+        </Text>
+        <Text style={styles.see}>
+          see all
+        </Text>
+      </View>
+
+      <View style={styles.docimg}>
+        <Image style={styles.doc} source={require('../Assets/doc1.jpg')}/>
+        <Image style={styles.doc} source={require('../Assets/doc2.jpg')}/>
+
+      </View>
+
+
+
+
+
+      </ScrollView>
+
 
       <Navbar navigation={navigation} />
     </View>
@@ -42,6 +77,34 @@ function Home({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    
+  },
+  docimg:{
+    flexDirection:'row',
+  },
+  doc:{
+    width:'45%',
+    height:300,
+    borderRadius:10,
+    margin:10
+  },
+  scrollView: {
+    flex: 1, 
+    marginBottom:20
+  },
+  see:{
+    color:'#7b844d'
+  },
+  subnav:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    paddingHorizontal:10,
+    paddingTop:20,
+    paddingBottom:5
+  },
+  subhead:{
+    fontWeight:'bold',
+    fontSize:18
   },
   search: {
     marginVertical: 10,
@@ -55,6 +118,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 18,
     margin: 10,
+  },
+  time:{
+    backgroundColor:'#7b844d',
+    width:75,
+    textAlign:'center',
+    color:'white',
+    borderRadius:10
   },
   profileContainer: {
     flexDirection: "row",
@@ -72,7 +142,8 @@ const styles = StyleSheet.create({
     width:'90%',
     marginLeft:'5%',
     borderWidth:1,
-    borderRadius:10
+    borderRadius:10,
+    marginBottom:20
   },
   box1:{
     height:80,
