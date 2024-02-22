@@ -6,7 +6,8 @@ import Blogs from './screens/Blogs';
 import Initial from './screens/Initial';
 import CameraScreen from './screens/CameraScreen';
 import Home from './screens/Home';
-import Test from './screens/Test';
+import Account from './screens/Account';
+import Settings from './screens/Settings';
 
 
 const Stack = createStackNavigator();
@@ -20,8 +21,8 @@ function App() {
         <Stack.Screen name="Blogs" component={Blogs} />
         <Stack.Screen name="Initial" component={Initial} />
         <Stack.Screen name="Camera" component={CameraScreen} />
-        <Stack.Screen name="Test" component={Test} />
-
+        <Stack.Screen name="Account" component={Account} />
+        <Stack.Screen name="Settings" component={Settings} />
       </Stack.Navigator>
     </NavigationContainer>
   );

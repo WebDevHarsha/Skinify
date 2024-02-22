@@ -21,12 +21,12 @@ const Navbar=({ navigation })=> {
           </TouchableOpacity>
         </View>
         <View style={styles.iconContainer}>
-          <TouchableOpacity onPress={() => navigation.navigate('Blogs')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Account')}>
             <Image source={require('../Assets/profile.png')} style={styles.icon} />
           </TouchableOpacity>
         </View>
         <View style={styles.iconContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity  onPress={() => navigation.navigate('Settings')}>
             <Image source={require('../Assets/settings.png')} style={styles.icon} />
           </TouchableOpacity>
         </View>

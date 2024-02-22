@@ -45,7 +45,7 @@ const MyCarousel = () => {
 const styles = StyleSheet.create({
   slide: {
     width: screenWidth - 60,
-    height: 450,
+    height: '90%',
     alignItems: 'center',
     backgroundColor: 'white',
     borderRadius: 10,
