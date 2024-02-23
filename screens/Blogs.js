@@ -19,7 +19,7 @@ function Blogs({navigation}) {
         />
         <Card
           title="My Journey with AI-Driven Skincare"
-          description="TMy skin was a mystery, but this AI app cracked the code! Glow-up achieved ✨"
+          description="My skin was a mystery, but this AI app cracked the code! Glow-up achieved ✨"
           imageSource={require('../Assets/blog3.png')}
         />
       </ScrollView>
