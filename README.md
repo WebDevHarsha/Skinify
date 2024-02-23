@@ -25,7 +25,11 @@ Welcome to Skinify, your go-to app for personalized skincare guidance and recogn
 3. **npm install pakages**: npm install
 
 4. **How to start the app**: npx expo start
-
+## Pictures:
+<img src="DemoPics/pic1.jpg" alt="alt text" height="750">
+<img src="DemoPics/pic2.jpg" alt="alt text" height="750">
+<img src="DemoPics/pic3.jpg" alt="alt text" height="750">
+<img src="DemoPics/pic4.jpg" alt="alt text" height="750">
 
 ## Contributing
 
